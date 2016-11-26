@@ -1,4 +1,4 @@
-// See page 8.
+// Page 8
 package main
 
 import (
