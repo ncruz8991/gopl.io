@@ -1,0 +1,4 @@
+Finished Benchmarking:
+	echo1	 5.33s
+	echo2	 6.64s
+	echo3	 0.01s

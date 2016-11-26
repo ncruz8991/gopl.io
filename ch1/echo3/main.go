@@ -7,14 +7,9 @@
 package main
 
 import (
-	"fmt"
-	"os"
-	"strings"
+	"github.com/ncruz8991/gopl.io/ch1/echo3/echo3"
 )
 
-//!+
 func main() {
-	fmt.Println(strings.Join(os.Args[1:], " "))
+	echo3.Run()
 }
-
-//!-

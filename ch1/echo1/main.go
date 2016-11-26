@@ -8,17 +8,9 @@
 package main
 
 import (
-	"fmt"
-	"os"
+	"github.com/ncruz8991/gopl.io/ch1/echo1/echo1"
 )
 
 func main() {
-	var s, sep string
-	for i := 1; i < len(os.Args); i++ {
-		s += sep + os.Args[i]
-		sep = " "
-	}
-	fmt.Println(s)
+	echo1.Run()
 }
-
-//!-
