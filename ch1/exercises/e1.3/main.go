@@ -1,3 +1,4 @@
+// Page 8
 // Echo speed test.
 // Tests each of echo1, echo2, and echo3 in the ch1 folder against a really long string.
 package main
