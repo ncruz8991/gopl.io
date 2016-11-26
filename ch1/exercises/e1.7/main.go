@@ -1,17 +1,18 @@
-// Page 16
-// This is a modified version of ch1/fetch/main.go that uses io.Copy() instead of ioutil.ReadAll
+// Page 17
+// This runs both e1.7 and e1.8.
 package main
 
 import (
 	"fmt"
+	"github.com/ncruz8991/gopl.io/ch1/exercises/e1.8"
+	"io"
 	"net/http"
 	"os"
-	"io"
 )
 
 func main() {
 	for _, url := range os.Args[1:] {
-		resp, err := http.Get(url)
+		resp, err := http.Get(e1_8.ParseUrl(url))
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "fetch: %v\n", err)
 			os.Exit(1)
