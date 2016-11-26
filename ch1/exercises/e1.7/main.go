@@ -1,5 +1,6 @@
 // Page 17
-// This runs both e1.7 and e1.8.
+// This runs e1.7-e1.9. Each commit in version control is one exercise finished
+// and may have slightly modified this file.
 package main
 
 import (
@@ -21,6 +22,7 @@ func main() {
 		// Instead of using ioutil.ReadAll, this copies the bytes straight
 		// to the standard output.
 		_, err = io.Copy(os.Stdout, resp.Body)
+		fmt.Printf("---\nReceived response with status: %s\n", resp.Status)
 
 		resp.Body.Close()
 		if err != nil {
